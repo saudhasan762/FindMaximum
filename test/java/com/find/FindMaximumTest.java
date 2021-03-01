@@ -9,64 +9,64 @@ public class FindMaximumTest {
     @Test
     public void checkMaximumNumber_FirstPosition(){
         FindMaximum findMax = new FindMaximum();
-        int result = findMax.findMaximum(20,15,5);
-        Assert.assertEquals(20,result);
+        Object[] array = {25,21,12,16,5};
+        Assert.assertEquals(array[0], findMax.findMaxGeneric(array));
     }
 
     @Test
     public void checkMaximumNumber_SecondPosition(){
         FindMaximum findMax = new FindMaximum();
-        int result = findMax.findMaximum(5,20,15);
-        Assert.assertEquals(20,result);
+        Object[] array = {41,55,20,7,50};
+        Assert.assertEquals(array[1], findMax.findMaxGeneric(array));
     }
 
     @Test
     public void checkMaximumNumber_ThirdPosition(){
         FindMaximum findMax = new FindMaximum();
-        int result = findMax.findMaximum(15,5,20);
-        Assert.assertEquals(20,result);
+        Object[] array = {2,4,9,3};
+        Assert.assertEquals(array[2], findMax.findMaxGeneric(array));
     }
 
     @Test
     public void checkMaximumNumber_Doubles_FirstPosition(){
         FindMaximum findMax = new FindMaximum();
-        double result = findMax.findMaximum_Doubles(25.6,22.7,21.3);
-        Assert.assertEquals(25.6,result,0);
+        Object[] array = {11.5,11.0,10.7,10.1};
+        Assert.assertEquals(array[0], findMax.findMaxGeneric(array));
     }
 
     @Test
     public void checkMaximumNumber_Doubles_SecondPosition(){
         FindMaximum findMax = new FindMaximum();
-        double result = findMax.findMaximum_Doubles(21.3,25.6,22.7);
-        Assert.assertEquals(25.6,result,0);
+        Object[] array = {2.5,7.6,6.8,0.2};
+        Assert.assertEquals(array[1], findMax.findMaxGeneric(array));
     }
 
     @Test
     public void checkMaximumNumber_Doubles_ThirdPosition(){
         FindMaximum findMax = new FindMaximum();
-        double result = findMax.findMaximum_Doubles(22.7,21.3,25.6);
-        Assert.assertEquals(25.6,result,0);
+        Object[] array = {25.0,24.6,26.3};
+        Assert.assertEquals(array[2], findMax.findMaxGeneric(array));
     }
 
     @Test
     public void checkMaximumString_FirstPosition(){
         FindMaximum findMax = new FindMaximum();
-        String result = findMax.findMaximum_String("Peach","Apple","Banana");
-        Assert.assertEquals("Peach",result);
+        Object[] array = {"Peach","Banana","Apple"};
+        Assert.assertEquals(array[0], findMax.findMaxGeneric(array));
     }
 
     @Test
     public void checkMaximumString_SecondPosition(){
         FindMaximum findMax = new FindMaximum();
-        String result = findMax.findMaximum_String("Apple","Peach","Banana" );
-        Assert.assertEquals("Peach",result);
+        Object[] array = {"Mango","Peach","Banana","Apple"};
+        Assert.assertEquals(array[1], findMax.findMaxGeneric(array));
     }
 
     @Test
     public void checkMaximumString_ThirdPosition(){
         FindMaximum findMax = new FindMaximum();
-        String result = findMax.findMaximum_String("Banana","Apple","Peach");
-        Assert.assertEquals("Peach",result);
+        Object[] array = {"Banana","Apple","Peach"};
+        Assert.assertEquals(array[2], findMax.findMaxGeneric(array));
     }
 
 }

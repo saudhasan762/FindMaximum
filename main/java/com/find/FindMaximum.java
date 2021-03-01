@@ -1,7 +1,24 @@
 package com.find;
 
-public class FindMaximum {
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
+public class FindMaximum<E> {
+    private E[] myArray;
+
+    public FindMaximum(E[] myArray) {
+        this.myArray = myArray;
+    }
+
+    public FindMaximum() {
+    }
+
+    public <E> Comparable findMaxGeneric(E[] input){
+        List myList = Arrays.asList(input);
+        Comparable maximum = Collections.max(myList);
+        return maximum;
+    }
 
     public int findMaximum(Integer x, Integer y, Integer z){
         int max = x;
