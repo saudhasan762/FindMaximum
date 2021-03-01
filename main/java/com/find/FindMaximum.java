@@ -12,10 +12,11 @@ public class FindMaximum<E> {
     public <E> Comparable findMaxGeneric(E[] input){
         List myList = Arrays.asList(input);
         Comparable maximum = Collections.max(myList);
+        System.out.println("Maximum value: "+maximum);
         return maximum;
     }
 
-    public int findMaximum(Integer x, Integer y, Integer z){
+    public int findMaximum_Integer(Integer x, Integer y, Integer z){
         int max = x;
         if(y.compareTo(max) > 0){
             max = y;
@@ -26,7 +27,7 @@ public class FindMaximum<E> {
         return  max;
     }
 
-    public double findMaximum_Doubles(Double x, Double y,Double z){
+    public double findMaximum_Floats(Double x, Double y,Double z){
         double max = x;
         if(y.compareTo(max) > 0){
             max = y;
