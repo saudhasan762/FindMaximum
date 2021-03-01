@@ -5,11 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class FindMaximum<E> {
-    private E[] myArray;
-
-    public FindMaximum(E[] myArray) {
-        this.myArray = myArray;
-    }
 
     public FindMaximum() {
     }
