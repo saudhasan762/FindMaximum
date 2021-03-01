@@ -48,4 +48,25 @@ public class FindMaximumTest {
         Assert.assertEquals(25.6,result,0);
     }
 
+    @Test
+    public void checkMaximumString_FirstPosition(){
+        FindMaximum findMax = new FindMaximum();
+        String result = findMax.findMaximum_String("Peach","Apple","Banana");
+        Assert.assertEquals("Peach",result);
+    }
+
+    @Test
+    public void checkMaximumString_SecondPosition(){
+        FindMaximum findMax = new FindMaximum();
+        String result = findMax.findMaximum_String("Apple","Peach","Banana" );
+        Assert.assertEquals("Peach",result);
+    }
+
+    @Test
+    public void checkMaximumString_ThirdPosition(){
+        FindMaximum findMax = new FindMaximum();
+        String result = findMax.findMaximum_String("Banana","Apple","Peach");
+        Assert.assertEquals("Peach",result);
+    }
+
 }
